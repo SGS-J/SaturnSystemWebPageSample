@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Saturn</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./../normalize.css" />
+    <link rel="stylesheet" href="./../principal.css" />
+    <link rel="stylesheet" href="./frm_aplicar.css" />
+    <link rel="icon" href="./../assets/star.png" type="image/x-icon" />
+  </head>
+  <body>
+    <header class="header">
+      <img src="./../assets/star.png" alt="Icon_Star_Webpage" />
+      <div class="header-mainlink">
+        <a href="./../principal.html">Inicio</a>
+        <a href="./frm_aplicar.html">Trabaja con nosotros</a>
+      </div>
+    </header>
+    <main class="page">
+      <form class="page-form">
+        <h1 class="form-title">Formulario de Aplicación</h1>
+        <div class="page-form-input">
+          <input
+            placeholder="Nombre Completo"
+            type="text"
+            name="name"
+            id="name"
+            required
+          />
+        </div>
+        <div class="page-form-input">
+          <input
+            placeholder="Cédula"
+            type="number"
+            name="userId"
+            id="cedula"
+            required
+          />
+        </div>
+        <div class="page-form-input">
+          <input
+            placeholder="Teléfono"
+            type="number"
+            name="mainPhone"
+            id="telefono"
+            required
+          />
+        </div>
+        <div class="page-form-input">
+          <input
+            placeholder="Teléfono Secundario"
+            type="number"
+            name="secondaryPhone"
+            id="telefono-secundario"
+          />
+        </div>
+        <div class="page-form-input">
+          <input
+            placeholder="Correo Electrónico"
+            type="email"
+            name="email"
+            id="correo"
+            required
+          />
+        </div>
+        <div class="page-form-input">
+          <label for="hoja-vida">Hoja de Vida:</label>
+          <input
+            class="file-input"
+            type="file"
+            name="documentPDF"
+            id="hoja-vida"
+            required
+          />
+        </div>
+        <input class="btn-submit" type="submit" value="¡APLICA AHORA!" />
+      </form>
+    </main>
+    <footer class="footer">
+      <img src="./../assets/star.png" alt="Icon_Star_Webpage_footer" />
+    </footer>
+    <script src="./frm_aplicar.js"></script>
+  </body>
+</html>
