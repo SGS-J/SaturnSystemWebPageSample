@@ -1,6 +1,7 @@
 const pageForm = document.querySelector('form');
 
 pageForm.addEventListener('submit', (e) => {
+  e.preventDefault();
   const formData = new FormData(pageForm);
 
   fetch('http://localhost:8080/user/add', {
@@ -10,5 +11,4 @@ pageForm.addEventListener('submit', (e) => {
   /*.then((res) => {
     location.reload();
   });+*/
-  e.preventDefault();
 });
