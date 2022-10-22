@@ -6,8 +6,9 @@ pageForm.addEventListener('submit', (e) => {
   fetch('http://localhost:8080/user/add', {
     body: formData,
     method: 'POST',
-  }).then((res) => {
-    location.reload();
   });
+  /*.then((res) => {
+    location.reload();
+  });+*/
   e.preventDefault();
 });
