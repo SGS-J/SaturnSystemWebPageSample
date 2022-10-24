@@ -13,7 +13,9 @@ btn.addEventListener('click', (e) => {
     method: 'POST',
   })
     .then((res) => {
-      console.log(res);
+      res.json().then((json) => {
+        console.log(json);
+      });
     })
     .catch((error) => {
       console.log(error);
