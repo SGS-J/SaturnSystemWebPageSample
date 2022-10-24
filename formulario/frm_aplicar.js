@@ -8,12 +8,13 @@ pageForm.addEventListener('submit', (e) => {
 btn.addEventListener('click', (e) => {
   const formData = new FormData(pageForm);
 
-  fetch('http://localhost:8080/user/add', {
+  const res = fetch('http://localhost:8080/user/add', {
     body: formData,
     method: 'POST',
   }).catch((error) => {
     console.log(error);
   });
+  console.log(res);
   /*.then((res) => {
     location.reload();
   });+*/
